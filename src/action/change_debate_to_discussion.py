@@ -9,7 +9,7 @@ def change_DebToDis():
             ws[f"C{row}"].value = "ディスカッション"
         if ws[f"D{row}"].value == "ディベート":
             if ws[f"C{row}"].value == "ディスカッション":
-                ws[f"D{row}"].value == ""
+                ws[f"D{row}"].value = None
             else:
                 ws[f"D{row}"].value = "ディスカッション"
 
