@@ -40,5 +40,6 @@ def make_membersheet():
 
     ws.sheet_state = ws.SHEETSTATE_HIDDEN
     wb.remove(wb["Sheet"])
+    # ws_all.auto_filter = f"A1:D{ws_all.max_row}"
 
     wb.save(r"goal\2022_ESS名簿.xlsx")
